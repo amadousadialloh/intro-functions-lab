@@ -160,7 +160,7 @@ const convertTemperature = (temperator, scale) => {
   }
 };
 
-console.log("Exercise 8 Result:", convertTemperature(32, "f"));
+console.log("Exercise 8 Result:", convertTemperature(32, "F"));
 
 /*
 Exercise 9: basicCalculator()
@@ -194,4 +194,37 @@ const basicCalculator = (firsNumber, secondNumber, operand) => {
   }
 };
 
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "add"));
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+
+const calculateGrade = (score) => {
+  if (score >= 90) {
+    return "A";
+  }
+  if (score >= 80 && score <= 89) {
+    return "B";
+  }
+  if (score >= 70 && score <= 79) {
+    return "C";
+  }
+  if (score >= 60 && score <= 69) {
+    return "D";
+  }
+  return "F";
+};
+
+console.log("Exercise 10 Result:", calculateGrade(85));
